@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damsaz's Tandori Bistro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>    
+        <!-- responsive nav -->       
+        <nav class="navbar navbar-expand-lg  " style="background-color: #f6b319;;">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">                    
+                <div alt="logo" class="brand-img"></div>
+                <h1 class="brand-name">Damsaz's Tandori Bistro 
+                    <div class="ms-1"> <img src="img/halal.png" width="30" alt=""></div>
+                </h1>                                        
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                
+                <!-- humburger -->
+                <div class="humburger-container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+              
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
+
+                    <li class="nav-item">                        
+                    <a class="nav-link active" aria-current="page" href="menu.html"><i class="fas fa-utensils d-lg-flex justify-content-center"></i> Menu</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="specials.html"><i class="fas fa-pizza-slice d-lg-flex justify-content-center "></i> Specials</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html"><i class="fas fa-info-circle d-lg-flex justify-content-center "></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link d-none d-sm-block" href="tel:0312689411"><i class="fas fa-phone d-lg-flex justify-content-center "></i> Order</a>
+                    </li>
+                    
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="phone" class="d-flex flex-column align-items-center d-block d-sm-none mt-4 ">
+           
+                <a href="tel:021-602-5008">
+                    <i class="fas fa-phone me-1 fs-2"></i>
+                    <span class="fs-2">021-602-5008</span>
+                </a>
+
+          
+        </div>
+
+      
+    </header>
+
+    <section id="main-sec">
+        <div class="container">
+            <img src="img/main-img.jpg" alt="" class="bg-img">
+        </div>
+    </section>
+
+    <section id="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-between">
+                    <div class="menu-box">
+                        <a href="menu.html">
+                            <img src="img/special-dish3.jpg" alt="" >
+                            <span>MENU</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-between">
+                    <div class="specials-box">
+                        <a href="specials.html">
+                            <img src="img/menu-img.jpg" alt="" >
+                            <span>SPECIALS</span>                    
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-between">
+                    <div class="map-box" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14419.3133977957!2d68.3359352!3d25.3770687!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87d1245e8f8cd992!2sTandoori%20Gril!5e0!3m2!1sen!2s!4v1617885342820!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <span>MAP</span>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-between">
+                    <div class="menu-box">
+                        <a href="menu.html">
+                            <img src="img/special-dish3.jpg" alt="" >
+                            <span>MENU</span>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 footer-card hours mt-4 ">
+                    <h2>Hours:</h2>
+                    <ul>
+                        <li>Sun-Thurs: 11:15am - 10:00pm</li>
+                        <li>Fri: 11:15am - 2:30pm </li>  
+                        <li>Saturday Closed</li>
+                     
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 footer-card address mt-4 ">
+                    <h2>Address:</h2>
+                    <ul>
+                        <li>7105 Reisterstown Road</li>
+                        <li>Baltimore, MD 21215</li>
+                        <li> <small>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</small> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 footer-card web-words mt-4 ">
+                    <h2>Suggestion Box :</h2>
+                     <small>
+                        <p>Any suggestion about about dishes or other matters please must suggest us.</p>
+                    </small>
+                    <small>
+                    <a href="suggestionbox.html">Click here</a>
+                    </small>
+                </div>
+            </div>
+           
+            <div class="copy-rights"> 
+                <p>&copy Tandori 2021</p>
+            </div> 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

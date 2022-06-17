@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: "lora", sans-serif;
+  line-height: 1.5;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Humburger styling */
+
+/* .navbar-toggler-icon {
+  padding: 15px;
+
+  border-radius: 5px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(97, 18, 47, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+} */
+
+.humburger-container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #aa2053;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* humburger styling end */
+
+nav .nav-item {
+  margin-right: 20px;
+}
+/* header {
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 2;
+} */
+
+.nav-link {
+  color: #ac0441;
+}
+.nav-link:hover {
+  color: #ac0441;
+}
+.navbar .nav-item:hover {
+  background-color: #557c3e62;
+}
+
+/* nav button span {
+  border: 1px solid #61122f;
+} */
+
+.fas,
+.fa {
+  font-size: 1.8em;
+}
+
+#main-sec img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0 0 50px #3f0c1f;
+  margin-top: 20px;
+  
+}
+
+#menu-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#menu-section img,
+.map-box {
+  border: 1px solid black;
+  width: 100%;
+}
+iframe {
+  width: 100%;
+  height: 230px;
+}
+/* #menu-section .container {
+  display: flex;
+  justify-content: space-between;
+} */
+.menu-box,
+.specials-box,
+.map-box {
+  position: relative;
+}
+.menu-box:hover,
+.specials-box:hover,
+.map-box:hover {
+  box-shadow: 0px 0px 10px #557c3e;
+}
+
+/* .menu-box a:hover, .specials-box a:hover, .map-box a:hover{
+    border: 3px solid silver;
+} */
+.menu-box span,
+.specials-box span,
+.map-box span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.7;
+}
+
+footer {
+  background-color: #222;
+}
+
+footer ul li {
+  line-height: 2;
+}
+
+.copy-rights {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 10px;
+  color: #9c0039;
+}
+
+/* menu categories page */
+
+#menu-categories .container {
+  text-align: center;
+}
+/* #menu-categories ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+#menu-categories ul li {
+  flex-basis: 25%;
+  margin-bottom: 20px;
+} */
+#menu-categories img {
+  border: 1px solid gainsboro;
+}
+.dish-tile {
+  position: relative;
+  margin-bottom: 20px;
+}
+#menu-categories .dish-tile img {
+  width: 100%;
+  height: 180px;
+}
+
+#menu-categories .dish-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.7;
+}
+#menu-categories .dish-tile img:hover {
+  border: 1px solid steelblue;
+}
+
+/* #menu-categories ul{
+    position: relative;
+} */
+
+/* lunch menu */
+
+#menu-list .container h1,
+#menu-list .container .menu-description {
+  text-align: center;
+}
+
+/* #menu-list ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+#menu-list ul li {
+  flex-basis: 45%;
+
+  margin-bottom: 20px;
+  display: flex;
+} */
+/* #menu-list ul li div {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* #menu-list ul li div h3 {
+  margin: 0px;
+} */
+/* .dish-heading {
+  font-size: 27px;
+  
+} */
+#menu-list .item-description {
+  font-size: 14px;
+  font-style: italic;
+  /* max-width: 250px; */
+}
+
+.dishes img {
+  width: 250px;
+  height: 180px;
+}
+
+.item-price {
+  /* text-align: end; */
+  font-size: 1.2em;
+  font-weight: 400;
+}
+/* #menu-list .dishes {
+ 
+} */
+.dishes {
+  position: relative;
+  width: 250px;
+  height: 180px;
+}
+
+.dishes .item-code {
+  background-color: #557c3e;
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+#aboutus p {
+  line-height: 2;
+  text-align: center;
+}
+
+#suggestions .container {
+  margin: 40px auto;
+}
+
+.suggestion-form {
+  width: 50%;
+}
+.suggestion-form input,
+.suggestion-form textarea {
+  width: 95%;
+
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.menu-box img,
+.specials-box img {
+  width: 100%;
+  height: auto;
+}
+.map-box {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 45px;
+  height: 0;
+}
+.map-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+nav .container {
+  width: 90%;
+}
+.brand-name {
+  color: #557c3e;
+  font-size: 1.4em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #222;
+}
+.brand-img {
+  background: url("../img/tandorilogo.png") no-repeat;
+  width: 155px;
+  height: 155px;
+}
+h2,
+.footer-card a {
+  color: #f6b319;
+  font-size: 1.5em;
+}
+.footer-card ul li,
+.footer-card p {
+  color: #9c0039;
+}
+
+#phone {
+  background-color: #f6b319;
+  max-width: 400px;
+
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid oldlace;
+}
+#phone a {
+  color: #9c0039;
+}
+/* .container {
+  border: 1px solid slateblue;
+} */
+
+/* media queries */
+/* 1333 */
+@media (max-width: 1333px) {
+  /* .dishes {
+    margin-bottom: 40px;
+  } */
+  /* #menu-list .container {
+    width: 80%;
+  } */
+  /* .item-description{
+    max-width: 400;
+  } */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .menu-box,
+  .specials-box,
+  .map-box {
+    margin-top: 30px;
+  }
+
+  .brand-img {
+    background: url("../img/tandorilogo.png") no-repeat;
+    background-size: 140px;
+    width: 140px;
+    height: 135px;
+  }
+  .brand-name {
+    font-size: 1.5em;
+  }
+  /* .dishes {
+    margin-bottom: 30px;
+  } */
+  /* #menu-list .container .dish-details {
+    width: 80%;
+    margin: 0 auto;
+  } */
+  .fas,
+  .fa {
+    font-size: 1em;
+  }
+  .nav-link {
+    font-size: 1.3em;
+  }
+  #menu-list .container {
+    width: 70%;
+  }
+  /* .item-description{
+    max-width: 400;
+  } */
+}
+
+@media screen and (max-width: 767px) {
+  .brand-img {
+    display: none;
+  }
+  .brand-name {
+    font-size: 1.4em;
+    font-weight: bolder;
+  }
+
+  .menu-box,
+  .specials-box,
+  .map-box {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .map-box {
+    width: 360px;
+    height: 50%;
+  }
+  .footer-card {
+    text-align: center;
+  }
+  /* .dish-details {
+    width: 100%;
+  } */
+  .dishes img {
+    width: 180px;
+    height: 140px;
+  }
+
+  .dishes {
+    position: relative;
+    width: 180px;
+    height: 140px;
+  }
+
+  .dishes .item-code {
+    background-color: #557c3e;
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  /* .dish-details{
+    width: 100%;
+  } */
+  #menu-list .container {
+    width: 90%;
+  }
+
+  /* nav */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {
+  nav .container {
+    width: 100%;
+  }
+  .brand-name {
+    font-size: 1.3em;
+  }
+
+  .dish-desc {
+    margin-top: 70px;
+  }
+  /* .item-price {
+  } */
+  /* .dish-box{
+    
+    
+  } */
+  .dish-border {
+    width: 80%;
+    height: 2px;
+    background-color: yellow;
+    margin: 0 auto;
+  }
+  #menu-list .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .dishes {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .dishes img {
+    width: 250px;
+    height: 180px;
+  }
+}
+
+/* humburger */
+/* 
+.humburger {
+  display: block;
+  width: 47px;
+  border-radius: 5px;
+  border: 1px solid rgba(97, 18, 47, 0.9);
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+
+.humburger-line {
+  width: 35px;
+  height: 3px;
+  background-color: rgba(97, 18, 47, 0.9);
+  margin: 5px 0;
+}
+.humburger:active,
+.humburger:focus {
+  border: 2px solid rgba(12, 11, 11, 0.9);
+} */
